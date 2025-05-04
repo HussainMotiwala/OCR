@@ -3,8 +3,6 @@ import os
 import cv2
 import numpy as np
 import pandas as pd
-from paddleocr_patch import patch_paddleocr
-patch_paddleocr()
 from paddleocr import PaddleOCR
 import tempfile
 from PIL import Image
