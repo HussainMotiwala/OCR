@@ -13,7 +13,8 @@ paddlepaddle==2.4.2
 paddleocr==2.6.0.3
 
 # Additional dependencies required by PaddleOCR
-PyMuPDF==1.20.2
+# Using the exact version required by PaddleOCR 2.6.0.3
+PyMuPDF==1.19.0
 shapely>=1.7.1
 pyclipper>=1.2.1
 setuptools==59.8.0
