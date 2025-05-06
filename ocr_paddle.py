@@ -106,7 +106,7 @@ def draw_bounding_boxes(image, results):
     return fig
 
 def main():
-    st.title("Handwritten Text Recognition with PaddleOCR")
+    st.title("Text Recognition with PaddleOCR")
     
     # Sidebar for language selection
     st.sidebar.header("Settings")
@@ -117,7 +117,7 @@ def main():
     
     # File uploader for multiple images
     uploaded_files = st.file_uploader(
-        "Upload handwritten document images (max 10 files)",
+        "Upload document images (max 10 files)",
         type=["jpg", "jpeg", "png"],
         accept_multiple_files=True
     )
