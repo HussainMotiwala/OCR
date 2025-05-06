@@ -2,6 +2,8 @@ import streamlit as st
 import os
 import cv2
 import numpy as np
+if not hasattr(np, 'int'):
+    np.int = int
 import pandas as pd
 from paddleocr import PaddleOCR
 import tempfile
