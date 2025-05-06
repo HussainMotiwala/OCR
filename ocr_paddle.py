@@ -13,7 +13,7 @@ import matplotlib.patches as patches
 
 # Set page configuration
 st.set_page_config(
-    page_title="Handwritten Text Recognition",
+    page_title="Text Recognition",
     page_icon="📝",
     layout="wide"
 )
