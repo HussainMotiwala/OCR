@@ -18,3 +18,4 @@ PyMuPDF==1.19.0
 shapely>=1.7.1
 pyclipper>=1.2.1
 setuptools==59.8.0
+pdf2image
