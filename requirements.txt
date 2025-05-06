@@ -1,8 +1,20 @@
-streamlit
-paddlepaddle
-paddleocr
-opencv-python
-pillow
-matplotlib
-pandas
-numpy
+# Core dependencies
+streamlit==1.45.0
+pandas==2.0.3
+numpy==1.24.3
+pillow==9.5.0
+matplotlib==3.7.2
+
+# OpenCV - headless version for cloud environments
+opencv-python-headless==4.8.0.76
+
+# PaddleOCR and PaddlePaddle with compatible versions
+paddlepaddle==2.4.2
+paddleocr==2.6.0.3
+
+# Additional dependencies required by PaddleOCR
+# Using the exact version required by PaddleOCR 2.6.0.3
+PyMuPDF==1.19.0
+shapely>=1.7.1
+pyclipper>=1.2.1
+setuptools==59.8.0
