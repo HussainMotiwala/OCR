@@ -15,7 +15,7 @@ import pdf2image  # Added for PDF conversion
 
 # Set page configuration
 st.set_page_config(
-    page_title="Handwritten Text Recognition",
+    page_title="Text Recognition",
     page_icon="📝",
     layout="wide"
 )
@@ -181,7 +181,7 @@ def process_file(file_path, language):
             return []
 
 def main():
-    st.title("Handwritten Text Recognition with PaddleOCR")
+    st.title("Text Recognition with PaddleOCR")
     
     # Sidebar for language selection
     st.sidebar.header("Settings")
@@ -192,7 +192,7 @@ def main():
     
     # File uploader for multiple files including PDFs
     uploaded_files = st.file_uploader(
-        "Upload handwritten document images or PDFs (max 10 files)",
+        "Upload document images or PDFs (max 10 files)",
         type=["jpg", "jpeg", "png", "pdf"],  # Added PDF as supported type
         accept_multiple_files=True
     )
@@ -305,23 +305,16 @@ def main():
         st.markdown("""
         ### How to use:
         1. Select the language for OCR recognition
-        2. Upload images or PDF files containing handwritten text
+        2. Upload images or PDF files containing text
         3. View the extracted text and download as CSV
         
         ### Supported file types:
         - Images: JPG, JPEG, PNG
         - Documents: PDF
         
-        ### PDF Support Requirements:
-        - Poppler must be installed on your system
-        - Windows: Download from http://blog.alivate.com.au/poppler-windows/
-        - macOS: `brew install poppler`
-        - Linux: `apt-get install poppler-utils`
-        
         ### Notes:
         - For PDFs, each page is processed separately
         - Maximum 10 files can be uploaded at once
-        - If errors occur, check console for details
         """)
 
 if __name__ == "__main__":
